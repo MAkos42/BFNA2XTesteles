@@ -53,7 +53,7 @@ public class Auto implements HanggalRendelkezo {
 		return hengerurtartalom;
 	}
 
-	public void setHengerurtartalom(String hengerurtartalom) 
+	public void setHengerurtartalom(String hengerurtartalom){
 		this.hengerurtartalom = hengerurtartalomErtekek.get(hengerurtartalom);
 	}
 
