@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.teszteles2021.core.exceptions.AjtokSzamaNemMegfeleloException;
+
 public class Auto implements HanggalRendelkezo {
 	public static Map<String, Integer> hengerurtartalomErtekek;
 
@@ -125,10 +127,13 @@ public class Auto implements HanggalRendelkezo {
 		return ajtokSzama;
 	}
 
-	protected void setAjtokSzama(int ajtokSzama) {
+	protected void setAjtokSzama(int ajtokSzama) throws AjtokSzamaNemMegfeleloException {
+		if (ajtokSzama < 0 || ajtokSzama > 5)
+			throw new AjtokSzamaNemMegfeleloException(ajtokSzama);
 		this.ajtokSzama = ajtokSzama;
 	}
 
+	public Auto() {}
 	public Auto(String gyarto, String modell, String hengerurtartalom, String rendszam, Uzemanyag uzemanyag,
 			LocalDate gyartasiIdo, String szinHex, boolean korozott, String forgalmiSzama, Valto valto, Kivitel kivitel,
 			int ajtokSzama) {
