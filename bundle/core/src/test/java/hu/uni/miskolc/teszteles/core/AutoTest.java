@@ -10,7 +10,6 @@ import org.junit.Test;
 import hu.uni.miskolc.teszteles.core.exceptions.AjtokSzamaNemMegfelelo;
 import hu.uni.miskolc.teszteles.core.exceptions.GyartasiIdoNemMegfelelo;
 import hu.uni.miskolc.teszteles.core.exceptions.RendszamNemMegfelelo;
-import junit.framework.Assert;
 
 public class AutoTest {
 

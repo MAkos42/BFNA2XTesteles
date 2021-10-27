@@ -30,7 +30,7 @@ public class Auto implements HanggalRendelkezo {
 
 	@Override
 	public void dudal() {
-		System.out.println("Tütü");
+		System.out.println("Tï¿½tï¿½");
 	}
 
 	public String getGyarto() {
@@ -53,7 +53,7 @@ public class Auto implements HanggalRendelkezo {
 		return hengerurtartalom;
 	}
 
-	public void setHengerurtartalom(String hengerurtartalom) 
+	public void setHengerurtartalom(String hengerurtartalom) {
 		this.hengerurtartalom = hengerurtartalomErtekek.get(hengerurtartalom);
 	}
 
